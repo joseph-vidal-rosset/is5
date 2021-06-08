@@ -1,0 +1,7 @@
+((A v (~(~A)) -> F) -> F) -> F
+(A & B v ((~(~A) -> F) v (B -> F)) -> F) -> F
+(A & B & C v ((~(~A) -> F) v (B -> F) v (C -> F)) -> F) -> F
+~(~C) & (A -> A -> D) & (B -> B -> A) & (C -> C -> B) -> D
+(A -> I) & ((~(~C) -> B) -> A) & ((~(~D) -> C) -> B) -> I
+(A v ~(~D)) & (B v ~(~E)) & (C v ~(~F)) -> (A & B) v (A & C) v (B & C) v (D & E) v (D & F) v (E & F)
+true & ((A <-> B) -> A & B & C & D) & ((B <-> C) -> A & B & C & D) & ((C <-> D) -> A & B & C & D) & ((D <-> A) -> A & B & C & D) -> E v A & B & C & D v ~E

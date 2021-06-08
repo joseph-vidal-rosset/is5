@@ -1,0 +1,7 @@
+true & ((A <-> B) -> A & B & C) & ((B <-> C) -> A & B & C) & ((C <-> A) -> A & B & C) -> A & B & C
+true & ((A <-> B) -> A & B & C & D & E) & ((B <-> C) -> A & B & C & D & E) & ((C <-> D) -> A & B & C & D & E) & ((D <-> E) -> A & B & C & D & E) & ((E <-> A) -> A & B & C & D & E) -> A & B & C & D & E
+(A v B v C) & (D v E v F) & (G v H v I) -> (A & D & G) v (A & D & H) v (A & D & I) v (A & E & G) v (A & E & H) v (A & E & I) v (A & F & G) v (A & F & H) v (A & F & I) v (B & D & G) v (B & D & H) v (B & D & I) v (B & E & G) v (B & E & H) v (B & E & I) v (B & F & G) v (B & F & H) v (B & F & I) v (C & D & G) v (C & D & H) v (C & D & I) v (C & E & G) v (C & E & H) v (C & E & I) v (C & F & G) v (C & F & H) v (C & F & I)
+(A & B & C v ((A -> F) v (B -> F) v (C -> F)) -> F) -> F
+C & (A -> A -> D) & (B -> B -> A) & (C -> C -> B) -> D
+((A -> I) & ((H -> E) -> D) & ((E -> B) -> A) & ((F -> C) -> B) & ((G -> D) -> C) -> I) & (((G -> D) -> C) & (((F -> C) -> B) & (((E -> B) -> A) & (((H -> E) -> D) & (A -> I)))) -> I)
+((A <-> B) <-> C) <-> (C <-> (B <-> A))
